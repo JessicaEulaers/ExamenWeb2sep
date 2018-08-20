@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="jumbotron">
+    <p>Enter the dates to get the info of Pokemons.</p>
+    <div class="form-group">
+	  <label for="usr">Date 1:</label>
+	  <input type="text" class="form-control" id="date1">
+	  <label for="usr">Date 2:</label>
+	  <input type="text" class="form-control" id="date2">
+	</div>
+	<button type="button" class="btn btn-primary" id="getInfo">Get info</button>
+  </div>
+  
+  <div class="jumbotron">
+    <h1> Pokemon</h1>      
+    <div class="form-group">
+	  <p>Name: {{name}}</p>
+	  <p>Type: {{types}}</p>
+	  <p>Trainer: {{trainer}}</p>
+	  <p>Gender: {{gender}}</p>
+	  <p>Owned: {{owned}}</p>   	  
+	</div>
+  </div>
+</div>

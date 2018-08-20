@@ -10,7 +10,7 @@ angular.module('pokemonApp', ['ngRoute'])
         })
         
         .when('/search', {
-            templateUrl: 'assets/views/search.html',
+            templateUrl: 'assets/views/bydate.html',
             controller: 'searchCtrl'
         })
         .otherwise({
