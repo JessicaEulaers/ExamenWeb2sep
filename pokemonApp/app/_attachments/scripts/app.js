@@ -68,8 +68,9 @@ angular.module('pokemonApp', ['ngRoute'])
 .service('pokemonService', function($http, $q){
 	this.getAllPokemons = function(){
 		var q = $q.defer();
+		var url = 'http://localhost:5984/pokemon/fd002477492739e548ed5a0754001645';
 		
-		$http.get('http://localhost:5984/pokemon/fd002477492739e548ed5a0754001645').then(function(data){
+		$http.get(url).then(function(data){
 			var all = data.data;
 			q.resolve(all);
 		}, function(err){
